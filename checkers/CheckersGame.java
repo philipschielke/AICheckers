@@ -143,8 +143,8 @@ public class CheckersGame {
             } else if (currentPlayer() == CheckersData.RED
                     && aiRed == true) {
                 console("Click to move red");
-                //AIredMove redsMove = new AIredMove(this,legalMoves);
-                 AIredMoveBetter redsMove = new AIredMoveBetter(this, legalMoves);
+                AIredMove redsMove = new AIredMove(this,legalMoves);
+                // AIredMoveBetter redsMove = new AIredMoveBetter(this, legalMoves);
                 doMakeMove(redsMove.nextMove());
                 return;
             }
